@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mygb: #04040c;
+  --color-primary: #bc61f3;
+  --color-secondary: #f0f0f0;
+  --font-menuFont: "Work Sans", serif;
+}
+
+.gradient-border {
+  border: 5px solid transparent; /* Make the border transparent */
+  border-image: linear-gradient(
+    0deg,
+    rgba(188, 97, 243, 1) 0%,
+    rgba(92, 67, 246, 1) 100%
+  );
+  border-image-slice: 1; /* Applies the gradient to the border */
+  border-radius: 12px; /* Adjust the value as needed for rounding */
+}
+
+.banner-image-overlay {
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+@layer utilities {
+  .btnLinear {
+    border: 5px solid transparent;
+    background: rgb(188, 97, 243);
+    background: linear-gradient(
+      0deg,
+      rgba(188, 97, 243, 1) 0%,
+      rgba(92, 67, 246, 1) 100%
+    );
+    background-origin: border-box;
+    background-clip: border-box;
+  }
+}
+
+@layer components {
+  .activNavItem {
+    @apply text-xl font-menuFont font-medium text-primary transition-colors
+    relative after:content-[''] after:w-full after:h-[10px] after:absolute after:bg-[#3A3653]
+    after:-bottom-4 after:left-0 after:rounded-[50%] after:scale-x-100 after:transition-all;
+  }
+
+  .navItem {
+    @apply text-xl font-menuFont font-medium transition-colors;
+  }
+}
+
+/* banner starts from here  */
+
+.titleBg {
+  background-image: url("./assets/images/titleImg.png");
+  background-position: -left top;
+  -webkit-background-clip: text; /* Corrected: Added the missing hyphen */
+  -webkit-text-fill-color: transparent; /* Corrected: Fixed the incorrect property name */
+}
