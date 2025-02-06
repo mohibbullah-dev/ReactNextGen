@@ -45,12 +45,17 @@ const Brand = () => {
       />
       <Container>
         <Flex
-          classname={`gap-[113px] items-center justify-center ${
+          classname={`z-50 gap-[75px] items-center justify-center ${
             allBrands.length > 5 && "flex-wrap"
           }`}
         >
           {allBrands.map(({ src, alt }) => (
-            <img key={alt} src={src} alt={alt} />
+            <img
+              key={alt}
+              src={src}
+              alt={alt}
+              className="object-contain z-50 cursor-pointer"
+            />
           ))}
         </Flex>
       </Container>

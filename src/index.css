@@ -4,18 +4,25 @@
   --color-mygb: #04040c;
   --color-primary: #bc61f3;
   --color-secondary: #f0f0f0;
+  ----color-third: #16192a;
   --font-menuFont: "Work Sans", serif;
 }
 
+/* .slick-list {
+  overflow: visible !important;
+} */
+.slick-slide {
+  padding: 0 25px;
+}
 .gradient-border {
-  border: 5px solid transparent; /* Make the border transparent */
+  border: 5px solid transparent;
   border-image: linear-gradient(
     0deg,
     rgba(188, 97, 243, 1) 0%,
     rgba(92, 67, 246, 1) 100%
   );
-  border-image-slice: 1; /* Applies the gradient to the border */
-  border-radius: 12px; /* Adjust the value as needed for rounding */
+  border-image-slice: 1;
+  border-radius: 12px;
 }
 
 .banner-image-overlay {

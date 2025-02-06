@@ -1,11 +1,10 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
 import RootLayouts from "./layouts/RootLayouts";
-import Home from "./pages/Home";
-import { Routes, Route } from "react-router";
-import Marketplace from "./pages/Marketplace";
 import Artist from "./pages/Artist";
 import Community from "./pages/Community";
-
+import Home from "./pages/Home";
+import Marketplace from "./pages/Marketplace";
 function App() {
   return (
     <>
