@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../sections/Navbar";
 
-const Marketplace = () => {
+const MarketPlace = () => {
   return (
     <>
       <Navbar />
@@ -10,4 +10,4 @@ const Marketplace = () => {
   );
 };
 
-export default Marketplace;
+export default MarketPlace;
