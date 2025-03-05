@@ -4,7 +4,7 @@ import RootLayouts from "./layouts/RootLayouts";
 import Artist from "./pages/Artist";
 import Community from "./pages/Community";
 import Home from "./pages/Home";
-import MarketPlace from "./pages/MarketPlace";
+import MarketPlace from "./pages/MarketPlace";App
 function App() {
   return (
     <>

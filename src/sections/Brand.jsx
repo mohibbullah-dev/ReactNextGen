@@ -45,7 +45,7 @@ const Brand = () => {
       />
       <Container>
         <Flex
-          classname={`z-50 gap-[75px] items-center justify-center ${
+          classname={`z-50 gap-[75px] items-center justify-center flex-wrap ${
             allBrands.length > 5 && "flex-wrap"
           }`}
         >

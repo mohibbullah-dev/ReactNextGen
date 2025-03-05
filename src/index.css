@@ -6,7 +6,7 @@
   --color-secondary: #f0f0f0;
   ----color-third: #16192a;
   --font-menuFont: "Work Sans", serif;
-}
+} 
 
 /* .slick-list {
   overflow: visible !important;
@@ -70,4 +70,13 @@
   background-position: -left top;
   -webkit-background-clip: text; /* Corrected: Added the missing hyphen */
   -webkit-text-fill-color: transparent; /* Corrected: Fixed the incorrect property name */
+}
+
+
+
+.social-gradient{
+  display: inline-block;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

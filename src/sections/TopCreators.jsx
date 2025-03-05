@@ -48,15 +48,15 @@ const TopCreators = () => {
           <Title title="Top Creators" classname="text-center" />
           <p className="text-xl text-secondary text-center w-[678px]">
             In commodo auctor eget congue sit. Ultrices eget pretium sit euismod
-            mi id. Risus, aliquam odio posuere ac in in nisl sed augue.{" "}
+            mi id. Risus, aliquam odio posuere ac in in nisl sed augue.{""}
           </p>
           <Buttons
             text="View all creators"
-            classname="text-secondary text-center "
+            classname="text-secondary text-center"
           />
         </Flex>
 
-        <Flex classname="gap-5 pt-16">
+        <Flex classname="gap-12 justify-center 2xl:gap-5 flex-wrap 2xl:flex-nowrap pt-16">
           {allImages.map(({ src, alt, text, btnText }) => (
             <Flex
               key={alt}
